@@ -1,0 +1,32 @@
+{
+  "name": "echo-zero",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ECHO//ZERO \u2014 a 2D cinematic time-manipulation psychological thriller",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx tests/run.ts",
+    "test:reach": "tsx tests/reach.ts",
+    "test:puzzles": "tsx tests/puzzles.ts",
+    "test:all": "npm run typecheck && npm test && npm run test:reach && npm run test:puzzles"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "puppeteer-core": "^25.16.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5"
+  }
+}
